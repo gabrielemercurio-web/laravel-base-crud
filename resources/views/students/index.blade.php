@@ -21,7 +21,7 @@
                             <th>COGNOME</th>
                             <th>MATRICOLA</th>
                             <th>EMAIL</th>
-                            <th>AZIONI</th>
+                            <th class="text-right">AZIONI</th>
                         </tr>
                     </thead>
                     <Tbody>
@@ -32,11 +32,13 @@
                                 <td>{{ $studente->lastname }}</td>
                                 <td>{{ $studente->serial }}</td>
                                 <td>{{ $studente->email }}</td>
-                                <td>
-                                <a class="btn btn-outline-info"
-                                href="{{ route('students.show', ['student' => $studente->id]) }}">
-                                    Dettagli
-                                </a>
+                                <td class="text-right">
+                                    <a class="btn btn-outline-info btn-sm"
+                                    href="{{ route('students.show', ['student' => $studente->id]) }}">
+                                        Dettagli
+                                    </a>
+                                    <a class="btn btn-outline-warning btn-sm" href="#">Modifica</a>
+                                    <a class="btn btn-outline-danger btn-sm" href="#">Elimina</a>
                                 </td>
                             </tr>
                         @endforeach

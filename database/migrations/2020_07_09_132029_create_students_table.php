@@ -17,7 +17,7 @@ class CreateStudentsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('lastname');
-            $table->string('serial-number', 6)->unique();
+            $table->string('serial', 6)->unique();
             $table->string('email')->unique();
             $table->timestamps();
         });

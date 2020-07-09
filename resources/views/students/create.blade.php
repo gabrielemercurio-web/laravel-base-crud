@@ -13,19 +13,19 @@
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" name="name" class="form-control" id="nome" placeholder="Nome...">
+                        <input type="text" name="name" class="form-control" id="nome" placeholder="...">
                     </div>
                     <div class="form-group">
                         <label for="cognome">Cognome</label>
-                        <input type="text" name="lastname" class="form-control" id="cognome" placeholder="Cognome...">
+                        <input type="text" name="lastname" class="form-control" id="cognome" placeholder="...">
                     </div>
                     <div class="form-group">
                         <label for="matricola">Matricola</label>
-                        <input type="text" name="serial" class="form-control" id="matricola" placeholder="Matricola...">
+                        <input type="text" name="serial" class="form-control" id="matricola" placeholder="...">
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="E-mail...">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="...">
                     </div>
                     <button type="submit" class="btn btn-primary"> Salva </button>
                 </form>
