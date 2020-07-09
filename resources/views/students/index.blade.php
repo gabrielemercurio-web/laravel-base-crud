@@ -7,7 +7,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="mt-4 mb-4">Lista di tutti gli studenti</h1>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="mt-4 mb-4">Lista di tutti gli studenti</h1>
+                <a class="btn btn-outline-primary" href="{{ route('students.create') }}">+ Nuovo studente</a>
+                </div>
+
                 <table class="table">
 
                     <thead>
@@ -29,7 +33,7 @@
                                 <td>{{ $studente->serial }}</td>
                                 <td>{{ $studente->email }}</td>
                                 <td>
-                                <a class="btn btn-info"
+                                <a class="btn btn-outline-info"
                                 href="{{ route('students.show', ['student' => $studente->id]) }}">
                                     Dettagli
                                 </a>
