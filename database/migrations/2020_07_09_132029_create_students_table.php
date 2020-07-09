@@ -21,6 +21,7 @@ class CreateStudentsTable extends Migration
             $table->string('email')->unique();
             $table->timestamps();
         });
+
     }
 
     /**
@@ -31,5 +32,6 @@ class CreateStudentsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('students');
+
     }
 }
