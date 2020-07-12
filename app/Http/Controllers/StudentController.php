@@ -36,6 +36,12 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required|max:255',
+            'lastname' => 'required|max:255',
+            'serial' => 'required|min:6|max:6|unique:students,serial',
+            'email' => 'required|max:255|unique:students,email|email:rfc'
+        ]);
         $dati = $request->all();
         $nuovo_studente = new Student;
         $nuovo_studente->fill($dati);
