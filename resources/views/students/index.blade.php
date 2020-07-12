@@ -37,7 +37,8 @@
                                     href="{{ route('students.show', ['student' => $studente->id]) }}">
                                         Dettagli
                                     </a>
-                                    <a class="btn btn-outline-warning btn-sm" href="#">Modifica</a>
+                                <a class="btn btn-outline-warning btn-sm" href="{{ route('students.edit', ['student' => $studente->id]) }}">
+                                        Modifica</a>
                                     <a class="btn btn-outline-danger btn-sm" href="#">Elimina</a>
                                 </td>
                             </tr>
