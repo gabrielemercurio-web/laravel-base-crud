@@ -37,9 +37,13 @@
                                     href="{{ route('students.show', ['student' => $studente->id]) }}">
                                         Dettagli
                                     </a>
-                                <a class="btn btn-outline-warning btn-sm" href="{{ route('students.edit', ['student' => $studente->id]) }}">
+                                    <a class="btn btn-outline-warning btn-sm" href="{{ route('students.edit', ['student' => $studente->id]) }}">
                                         Modifica</a>
-                                    <a class="btn btn-outline-danger btn-sm" href="#">Elimina</a>
+                                    <form action="{{ route('students.destroy', ['student' => $studente->id]) }}" style="display: inline-block" method="post">
+                                        @method('DELETE')
+                                        @csrf
+                                        <input type="submit" class="btn btn-outline-danger btn-sm" value="Elimina">
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

@@ -52,8 +52,8 @@
                             <small class="alert-danger">{{ $message }}</small>
                         @enderror
                     </div>
-                    <button type="submit" class="btn btn-primary"> Salva </button>
                     <a class="btn btn-outline-secondary" href="{{ route('students.index') }}"> Annulla </a>
+                    <button type="submit" class="btn btn-success"> Salva </button>
                 </form>
             </div>
         </div>
